@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: rgba(254, 113, 112, 255);
+      text-align: center;
+    list-style-type: space;
+      padding: 20px 20px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .navbar ul li:last-child {
+      margin-right: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh; /* Full height of viewport */
+    }
+
+    .left,
+    .right {
+      width: 50%; /* Each section takes up half of the width */
+      padding: 20px;
+    }
+
+    .left {
+      background: linear-gradient(90deg, rgba(254, 244, 175, 255), rgba(255, 219, 200, 255)); /* Adjust the gradient colors */
+    }
+
+    .right {
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left h2 {
+      font-size: 36px; /* Increase font size */
+      margin-bottom: 20px; /* Add more bottom margin */
+    }
+
+    .left p {
+      padding-bottom: 20px; /* Add padding to the bottom of the paragraph */
+      font-size: large; /* Make font larger */
+      color: rgba(0, 0, 0, 0.8); /* Darken the color */
+    }
+
+    .button {
+      background-color: rgba(254, 113, 112, 255); /* Orange background */
+      color: white; /* White text */
+      padding: 10px 20px;
+      border: none; /* Remove border */
+      cursor: pointer; /* Change cursor on hover */
+    }
+
+    .button:hover {
+      background-color: rgba(255, 165, 0, 0.7); /* Darker orange on hover */
+    }
+
+    #clickme {
+      position: relative;
+      top: 50px;
+      left: 50px;;
+      color: white;
+      
+      background-color: rgba(254, 113, 112, 255); /* Orange background */
+    }
+
+    #lorem {
+      margin: 50px;
+      padding: 15px;
+      position: relative;
+      top: 5px;
+    }
+
+    #para {
+      position: relative;
+      right: 100px;
+      padding: 20px;
+      font-size:large;
+      font-weight: 400;
+    }
+
+    .right img {
+      width: 100%; /* Set width to cover the container */
+      height: 100%; /* Set height to cover the container */
+      object-fit: cover; /* Ensure the image covers the entire container */
+    }
+
+    .right {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image-container img {
+      width: 30%; /* Adjust the width of the images */
+      height: auto;
+      margin-bottom: 20px; /* Add margin between images */
+    }
+  
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Order</a></li>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Restaurant</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li>
+        <a href="#">
+          
+          <img src="menu-bar.png"  style="width: 30px; height: 30px; position: relative; top: 6px; left: 5px; ">
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="container">
+    <div class="left">
+      <!-- Left content goes here -->
+
+      <h1 id="lorem"><b>L O R E M&nbsp;&nbsp;I P S U M</b></h1>
+      <pre id="para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra. 
+            </pre>
+            <button id="clickme" class="button" >Click Me</button>
+
+    </div>
+    <div class="right">
+      <img src="pexels-robin-stickel-70497.jpg">
+    </div>
+  </div>
+  <br>
+  <!-- Additional Images -->
+ 
+</body>
+
+</html>
